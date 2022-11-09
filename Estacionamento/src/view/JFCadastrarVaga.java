@@ -57,7 +57,6 @@ public class JFCadastrarVaga extends javax.swing.JFrame {
 
         jLabel3.setText("Rua");
 
-        jTFRua.setText("jTextField2");
         jTFRua.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTFRuaActionPerformed(evt);

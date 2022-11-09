@@ -107,9 +107,6 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="jTFRua">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="jTextField2"/>
-      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTFRuaActionPerformed"/>
       </Events>

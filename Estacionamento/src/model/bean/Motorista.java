@@ -9,7 +9,6 @@ public class Motorista {
     private int celular;
     private String email;
     private String senha;
-
     public int getIdMotorista() {
         return idMotorista;
     }
@@ -38,7 +37,7 @@ public class Motorista {
         return RG;
     }
 
-    public void setRg(int RG) {
+    public void setRG(int RG) {
         this.RG = RG;
     }
 
@@ -46,7 +45,7 @@ public class Motorista {
         return CPF;
     }
 
-    public void setCpf(int CPF) {
+    public void setCPF(int CPF) {
         this.CPF = CPF;
     }
 
