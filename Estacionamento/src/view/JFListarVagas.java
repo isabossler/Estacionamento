@@ -5,6 +5,7 @@
  */
 package view;
 
+import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 import model.dao.VagaDAO;
 import model.bean.Vaga;
@@ -72,6 +73,11 @@ public class JFListarVagas extends javax.swing.JFrame {
         jButton1.setText("Cadastrar Vaga");
 
         jButton2.setText("Editar Vaga");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         jButton3.setText("Excluir Vaga");
 
@@ -114,6 +120,16 @@ public class JFListarVagas extends javax.swing.JFrame {
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
         readJTable();
     }//GEN-LAST:event_formWindowOpened
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        if(jTVaga.getSelectedRow() != 1){
+            int vagaSelecionada = (int) jTVaga.getValueAt(jTVaga.getSelectedRow(), 0);
+            JFAtualizarVaga av = new JFAtualizarVaga(vagaSelecionada);
+            av.setVisible(true);   
+        }else {
+        JOptionPane.showMessageDialog(null,"Selecione uma vaga", "Erro", JOptionPane.ERROR_MESSAGE);
+        }
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     public void readJTable(){
     DefaultTableModel modelo = (DefaultTableModel) jTVaga.getModel();
