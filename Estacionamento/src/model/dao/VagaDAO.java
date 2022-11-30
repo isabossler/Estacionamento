@@ -46,7 +46,7 @@ public class VagaDAO {
                 v.setIdVaga(rs.getInt("idVaga"));
                 v.setNumero(rs.getInt("numero"));
                 v.setRua(rs.getString("rua"));
-                v.setObliquo(rs.getBoolean("Obliquo"));
+                v.setObliquo(rs.getBoolean("Obliqua"));
                 vagas.add(v);
 
             }
@@ -88,7 +88,7 @@ public class VagaDAO {
             if (rs != null && rs.next()) {
                 v.setIdVaga(rs.getInt("idVaga"));
                 v.setNumero(rs.getInt("numero"));
-                v.setRua(rs.getString(""));
+                v.setRua(rs.getString("rua"));
                 v.setObliquo(rs.getBoolean("Obliqua"));
 
             }

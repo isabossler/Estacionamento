@@ -19,3 +19,4 @@ email varchar (72),
 senha varchar (20) NOT NULL,
 PRIMARY KEY (idMotorista));
 
+

@@ -42,7 +42,7 @@ public class MotoristaDAO {
         ResultSet rs = null;
         List<Motorista> motorista = new ArrayList<>();
         try {
-            stmt = con.prepareStatement("SELECT * FRON motorista;");
+            stmt = con.prepareStatement("SELECT * FROM motorista;");
             rs = stmt.executeQuery();
             while (rs.next()) {
                 Motorista m = new Motorista();
